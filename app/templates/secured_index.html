@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--
+	Snapshot by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>{{title}}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../static/css/main.css" />
+        <style>
+            div.padding1 {
+                padding-top: 10px;
+            }
+
+            * {box-sizing: border-box;}
+            .column {
+              float: left;
+              width: 33.33%;
+              padding: 5px;
+            }
+            .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+
+y
+        </style>
+	</head>
+	<body>
+		<div class="page-wrap">
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="/" class="active"><span class="icon fa-home"></span></a></li>
+                        <li><a href="/file_management"><span class="icon fa-camera-retro"></span></a></li>
+						<li><a href="/upload_management"><span class="icon fa-file-text-o"></span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+
+					<!-- Banner -->
+						<section id="banner">
+							<div class="inner">
+								<h2>Welcome! <span style="color: yellow">{{ username }}</span></h2>
+                                <h2>Member Since: <span style="color: yellow">{{ membersince }}</span></h2>
+                                <div>
+                                    <a href="/file_management" class="button">Photo Gallery</a>
+                                    <a href="/upload_management" class="button">Process New Photo</a>
+                                    <p></p>
+                                    <form action='/logout' method='post'>
+                                        <input align="right" class = "button" type="submit" value="Logout">
+                                    </form>
+							</div>
+
+						</section>
+
+					<!-- Gallery -->
+						<section id="galleries">
+
+							<!-- Photo Galleries -->
+								<div class="gallery">
+									<header class="special">
+										<h2 style="padding-left: 10px; padding-top: 20px;">Example Photos Processed by OpenCV Text Detection Engine:</h2>
+                                    </header>
+									<div class="content">
+                                        <div class="row">
+                                          <div class="column">
+                                            <img src="../static/images/thumbs/01.jpg" alt="Snow" style="width:100%">
+                                          </div>
+                                          <div class="column">
+                                            <img src="../static/images/thumbs/02.jpg" alt="Forest" style="width:100%">
+                                          </div>
+                                          <div class="column">
+                                            <img src="../static/images/thumbs/03.jpg" alt="Mountains" style="width:100%">
+                                          </div>
+                                        </div>
+									</div>
+								</div>
+						</section>
+
+                        <hr/>
+                        <div style="padding-left: 10px">
+                            <div>Image Text Identification Process Engine</div>
+                            <div>ECE1779:Introduction to Cloud Computing</div>
+                            <div>by: FelixHong, FredPan, ChrisXu</div>
+                        </div>
+                        <div style="padding-left: 10px">
+                            &copy; Design Template Source: <a href="https://templated.co/">TEMPLATED</a>.
+                        </div>
+
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<script src="../static/js/jquery.min.js"></script>
+			<script src="../static/js/jquery.poptrox.min.js"></script>
+			<script src="../static/js/jquery.scrolly.min.js"></script>
+			<script src="../static/js/skel.min.js"></script>
+			<script src="../static/js/util.js"></script>
+			<script src="../static/js/main.js"></script>
+
+	</body>
+</html>
